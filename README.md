@@ -1,5 +1,3 @@
-**Opis rzeczywistego problemu: Rozpoznawanie chorób roślin na podstawie zdjęć**
-
 ### Cel projektu
 Celem projektu jest opracowanie i implementacja systemu, który automatycznie rozpoznaje patogenu roślin na podstawie zdjęć liści lub innych części rośliny. 
 Efektem końcowym będzie model, który na podstawie wprowadzonego zdjęcia potrafi z dużą dokładnością zidentyfikować występującą chorobę, szkodnika, czy roślina jest zdrowa. 
