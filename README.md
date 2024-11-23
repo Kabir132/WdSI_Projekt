@@ -15,7 +15,7 @@ szczególnie istotne w rolnictwie intensywnym i na dużą skalę.
 
 ### Dane wejściowe
 Dane wejściowe będą stanowiły zdjęcia liści, łodyg lub owoców roślin wykonane w różnych warunkach oświetleniowych i klimatycznych. 
-Zdjęcia będą mierzone pod kątem występowania cech chorobowych, takich jak zmiany koloru, plamy, przebarwienia, deformacje, czy widoczne objawy zasychania. 
+Zdjęcia będą mierzone pod kątem występowania cech chorobowych, takich jak zmiany koloru, plamy, $pasożyty$, przebarwienia, deformacje, czy widoczne objawy zasychania. 
 Wstępna obróbka zdjęć obejmie ich standaryzację pod kątem jakości, rozdzielczości oraz normalizację kolorystyczną, co pozwoli wyeliminować 
 błędy wynikające z różnic w sprzęcie fotograficznym lub warunkach pogodowych.
 
