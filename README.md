@@ -143,4 +143,10 @@ Należy przygotować demo, które będzie pokazywać działanie wybranej koncepc
 
 # 5. Źródła
 
-ChatGPT - pomoc merytoryczna
+- [ChatGPT - pomoc merytoryczna](https://www.openai.com/research/chatgpt)
+- [KN RAI kurs machine learning](https://github.com/KoloNaukowe-RAI/Kurs-Machine-Learning)
+- [Podobne projekty na githubie](https://github.com/)
+- Wiedza z zajęć
+- [TensorFlow Documentation](https://www.tensorflow.org/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+- [Scikit-Learn Documentation](https://scikit-learn.org/stable/documentation.html)
