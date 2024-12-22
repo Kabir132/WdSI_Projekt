@@ -18,7 +18,7 @@
 - ### Dane wejściowe
 
   Dane wejściowe będą stanowiły zdjęcia liści, łodyg, kwiatów lub owoców roślin wykonane w różnych warunkach oświetleniowych i klimatycznych.
-  Zdjęcia będą mierzone pod kątem występowania cech chorobowych, takich jak zmiany koloru, plamy, przebarwienia, deformacje, brazwzrostu, chorozy czy nekrozy.
+  Zdjęcia będą mierzone pod kątem występowania cech chorobowych, takich jak zmiany koloru, plamy, przebarwienia, deformacje, **_brazwzrostu_**, chorozy czy nekrozy.
   Wstępna obróbka zdjęć obejmie ich standaryzację pod kątem jakości, rozdzielczości oraz normalizację kolorystyczną, co pozwoli wyeliminować
   błędy wynikające z różnic w sprzęcie fotograficznym lub warunkach pogodowych.
 
@@ -35,7 +35,15 @@ W sekcji drugiej należy zwięźle opisać znane koncepcje (minimum 3) rozwiąza
 
   - ### Podejście do problemu
 
-    Rozwiązanie to polega na wykorzystaniu funkcji SIFT z biblioteki OpenCV do wyznaczenia punktów szczególnych obrazu. Mając punkty szczególne, można je pokazać na wykresie typu punktowego. Analizując takie wykresy, spróbujemy dopasować sposób klasyfikacji danych i później na ich podstawie próbować przewidywać dane.
+    Rozwiązanie to polega na wykorzystaniu funkcji SIFT z biblioteki OpenCV do wyznaczenia punktów szczególnych obrazu. Mając punkty szczególne, można je pokazać na wykresie typu punktowego. Analizując takie wykresy, spróbujemy dopasować sposób klasyfikacji danych i później na ich podstawie próbować przewidywać dane. Naptkałem problem, iż dane są zbyt rozrzucone przez co ciężko storzyć klasyfikację.
+
+  - ### Wykorzystane biblioteki
+
+    |  Biblioteki   |
+    | :-----------: |
+    | opencv-python |
+    | scikit-learn  |
+    |   kagglehub   |
 
   - ### Tabela zalet i wad
 
@@ -46,7 +54,7 @@ W sekcji drugiej należy zwięźle opisać znane koncepcje (minimum 3) rozwiąza
     |   Przejrzystość i interpretowalność   |        Brak automatycznej optymalizacji         |
     | Skuteczność na małych zbiorach danych | Mniej efektywne w przypadku złożonych problemów |
 
-  - przykładowe dane
+  - ### przykładowe dane
 
     - ### Obraz z nałożonymi punktami algorytmu SIFT
 
@@ -60,16 +68,14 @@ W sekcji drugiej należy zwięźle opisać znane koncepcje (minimum 3) rozwiąza
 
   - ### Podejście do problemu
 
-    Tensorflow jest biblioteką która w wygodny dla użytkownika sposób daje możliwość wyuczanego własnej sieci korelacyjnej. Rozwiązanie problemu rozpoznawanią chorób przy pomocy tensorflow jest proste i wygodne. Wykorzystująć odpowiedni model (w moim przypadku jest to gotowy model ResNet50 z dwiema dodatykowymi wartwami Dense) pozwala przy niewielkim wysiłku napisać aplicje która będzie potrafiła rozpoznawac choroby u roślin. Największą wadą tego roziwązania jest to, iż potrzebna jest jednostka obliczenia o dużej wynajości, żeby uczenie zostało zrealizowne szybko i sprawnie (uczelnia nie zapenia takich komputer ＞﹏＜ chyba).
+    Tensorflow jest biblioteką która w wygodny dla użytkownika sposób daje możliwość wyuczanego własnej sieci korelacyjnej. Rozwiązanie problemu rozpoznawanią chorób przy pomocy tensorflow jest proste i wygodne. Wykorzystująć odpowiedni model (w moim przypadku jest to gotowy model ResNet50 z dwiema dodatykowymi wartwami Dense) pozwala przy niewielkim wysiłku napisać aplicje która będzie potrafiła rozpoznawac choroby u roślin. Największą wadą tego roziwązania jest to, iż potrzebna jest jednostka obliczenia o dużej wynajości, żeby uczenie zostało zrealizowne szybko i sprawnie (uczelnia nie zapenia takich komputer ＞﹏＜ - chyba).
 
   - ### Wykorzystane biblioteki
 
     |  Biblioteki   |
     | :-----------: |
+    |   kagglehub   |
     | opencv-python |
-    |    pandas     |
-    | scikit-learn  |
-    |    openml     |
     |     keras     |
     |  tensorflow   |
 
@@ -102,6 +108,30 @@ W sekcji drugiej należy zwięźle opisać znane koncepcje (minimum 3) rozwiąza
     - ### Wynik naucznia modelu dla epoch = 4
 
     ![Inline image alt text](https://github.com/Kabir132/WdSI_Projekt/blob/main/readme_images/podejscie2_wynik_nauczania.png?raw=true "Optional image title")
+
+- ### Drugie trzecie: ----
+
+  - ### Podejście do problemu
+
+  - ### Wykorzystane biblioteki
+
+    |  Biblioteki   |
+    | :-----------: |
+    |   kagglehub   |
+    | opencv-python |
+    |     keras     |
+    |  tensorflow   |
+
+  - ### Tabela zalet i wad
+
+    |                     Zalety                      |              Wady              |
+    | :---------------------------------------------: | :----------------------------: |
+    | End-to-end learning (automatyczne uczenie cech) | Wysokie wymagania obliczeniowe |
+    |                 Wszechstronność                 | Potrzeba dużych zbiorów danych |
+    |     Szeroka społeczność i zasoby edukacyjne     |   Mniejsza interpretowalność   |
+    |        Automatyczna optymalizacja modeli        |    Problemy z debugowaniem     |
+
+  - przykładowe dane
 
 # 3. Opis wybranej koncepcji (5 pkt)
 
