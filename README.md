@@ -192,6 +192,9 @@ System, zbudowany od podstaw w TensorFlow i Keras, oferuje pełną kontrolę nad
 
 Wykorzystanie gotowego modelu ResNet50 w TensorFlow pozwala na szybkie i efektywne rozwiązanie problemu rozpoznawania chorób roślin. ResNet50 to głęboka sieć neuronowa, która została przeszkolona na dużym zbiorze danych ImageNet, co czyni ją bardzo skuteczną w zadaniach związanych z klasyfikacją obrazów. W naszym projekcie model ResNet50 został dostosowany poprzez dodanie dwóch dodatkowych warstw Dense, co pozwala na lepsze dopasowanie do specyficznych danych dotyczących chorób roślin.
 
+### Wykorzstana baza danych
+https://www.kaggle.com/datasets/sadmansakibmahi/plant-disease-expert
+
 ### Zalety metody
 
 1. **Szybkie wdrożenie**: Wykorzystanie gotowego modelu ResNet50 znacznie skraca czas potrzebny na przygotowanie i trenowanie modelu.
@@ -208,7 +211,7 @@ Wykorzystanie gotowego modelu ResNet50 w TensorFlow pozwala na szybkie i efektyw
 
 ### Wnioski
 
-Wybór metody opartej na TensorFlow z modelem ResNet50 jest uzasadniony ze względu na wysoką dokładność i efektywność w zadaniach związanych z klasyfikacją obrazów. Pomimo pewnych wad, takich jak wysokie wymagania obliczeniowe i mniejsza kontrola nad architekturą, korzyści płynące z szybkiego wdrożenia i możliwości transfer learningu przeważają. Metoda ta jest dobrym narzędziem do realizacji projektu rozpoznawania chorób roślin, umożliwiając szybkie i precyzyjne wykrywanie chorób.
+Wybór metody opartej na TensorFlow z modelem ResNet50 jest uzasadniony ze względu na dokładność i efektywność w zadaniach związanych z klasyfikacją obrazów. Pomimo pewnych wad, takich jak wysokie wymagania obliczeniowe i mniejsza kontrola nad architekturą, korzyści płynące z szybkiego wdrożenia i możliwości transfer learningu przeważają. Metoda ta jest dobrym narzędziem do realizacji projektu rozpoznawania chorób roślin, umożliwiając szybkie i precyzyjne wykrywanie chorób.
 
 # 4. Proof of concept (7 pkt)
 
